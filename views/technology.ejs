@@ -1,0 +1,19 @@
+<%- include('partials/header', { cssFile: '/technology.css' }) %>
+
+<h1>Hello technology</h1>
+
+<div>
+    <ul class="techno__list">
+        <% for (const techno of allTechno) { %>
+            <a href="/technology/<%= techno.name%>"><li><%=techno.name%></li></a>
+        <% } %>
+        <!-- <a href="/crew/:role"><li>Engineer</li></a>
+        <a href="/crew/:role"><li>pilot</li></a>
+        <a href="/crew/:role"><li>Specialist</li></a> -->
+    </ul>
+    <div class="main__return">
+        <a class="return" href="/">Return</a>
+    </div>
+</div>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,28 @@
+< <%- include('partials/header',  { cssFile: '/crew.css' }) %> 
+<h1>Our crew</h1>
+
+<div>
+    <ul class="crew__list">
+        <% for (const crewMember of allRole) { %>
+            <a href="/crew/<%= crewMember.role%>"><li><%=crewMember.name%></li></a>
+        <% } %>
+        <!-- <a href="/crew/:role"><li>Engineer</li></a>
+        <a href="/crew/:role"><li>pilot</li></a>
+        <a href="/crew/:role"><li>Specialist</li></a> -->
+    </ul>
+    <div class="main__return">
+        <a class="return" href="/">Return</a>
+    </div>
+</div>
+
+
+<%- include('partials/footer') %>
+
+
+
+
+<!-- <a href=""
+class="slide-link">
+    <span>HOME</span>
+    <span>HOME</span>
+</a> -->

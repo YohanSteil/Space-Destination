@@ -1,0 +1,10 @@
+<%- include('partials/header', { cssFile: '/oneTechnology.css' }) %>
+
+<h1>
+    <%= technology.name %>
+</h1>
+<div class="techno">
+    <img src="../starter-code/assets/technology/image-<%=technology.name.toLowerCase().replace(/\s+/g, '-')%>-portrait.jpg" alt="">
+    <h3>Description : <%= technology.description %></h3>
+</div>
+<%- include('partials/footer') %>

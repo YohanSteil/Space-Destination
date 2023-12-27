@@ -1,0 +1,25 @@
+<%- include('partials/header.ejs', { cssFile: '/destinationOnePlanet.css' }) %>
+
+<h1>
+    <%= oneDestination.name %>
+</h1>
+
+<main class="main">
+    <div class="main__img">
+     <img src="../starter-code/assets/destination/image-<%= oneDestination.name %>.png " alt="">
+    </div>
+    <div class="main__description">
+        <h2>Description de la planète : <%= oneDestination.description %> </h2>
+        <p>Distance from Earth : <%= oneDestination.distance %> </p>
+        <p>Travel days : <%= oneDestination.travel %></p>
+        <div class="main__return">
+            <a class="return" href="/destination">Return</a>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+<%- include('partials/footer') %>

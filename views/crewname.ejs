@@ -1,0 +1,20 @@
+< <%- include('partials/header',  { cssFile: '/crewOnePerson.css' }) %> 
+
+<h1>
+    <%= oneRole.name %>
+</h1>
+<div class="descriptionPerson">
+    <img src="../starter-code/assets/crew/image-<%= oneRole.name.toLowerCase().replace(/\s+/g, '-') %>.png" alt="">
+    <div class="descriptionPerson__text">
+    <h3><%= oneRole.role %></h3>
+    <p><%= oneRole.bio %></p>
+    <div class="main__return">
+        <a class="return" href="/crew">Return</a>
+    </div>
+</div>  
+
+</div>
+
+
+<%- include('partials/footer') %>
+

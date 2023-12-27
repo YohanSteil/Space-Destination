@@ -1,0 +1,42 @@
+body{
+    background-image: url(../starter-code/assets/technology/background-technology-desktop.jpg);
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+main{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+
+h1{
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 100px;
+    text-decoration: underline;
+    text-underline-offset: 30px;
+}
+
+.techno{
+    display: flex;
+    flex-direction:row;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.techno>img{
+    border-radius: 50px;
+}
+
+h3{
+    margin: 50px;
+    color: white;
+    letter-spacing: 0.1rem;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+}

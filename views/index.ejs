@@ -1,0 +1,68 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="navbar">
+        <div class="navbar__logo">
+          <img src="../starter-code/assets/shared/logo.svg" alt="" />
+        </div>
+        <div class="navbar__title">
+          <a href="">00 Home </a>
+          <a href="">01 Destination</a>
+          <a href="">02 Crew</a>
+          <a href="">03 Technology</a>
+        </div>
+      </div>
+    </nav>
+    <main> -->
+
+        <%- include('partials/header') %>
+        
+        <main>     
+      <div class="main__left">
+    <p class="main__left__textUppercase">So, you want to travel to <br><span>Space</span> </p>
+    <p class="main__left__textNormal">Let’s face it; if you want to go to space,
+    you might as well genuinely go to outer space and not hover kind of on the
+    edge of it. Well sit back, and relax because we’ll give you a truly out of
+    this world experience!</p>
+    </div>
+    <!-- <a class="main__right" href="">
+      Explore
+    </a> -->
+    <div class="textTransform">
+    <a href=""><h1 id="my-text">
+      EXPLORE! 
+    </h1>
+  </a>
+  </div>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+      const myText = new SplitType("#my-text")
+      gsap.to('.char', {
+        y: 0,
+        stagger: 0.05,
+        delay: 0.2,
+        duration : 0.1,
+      })
+    </script>
+  </main>
+  
+  <%- include('partials/footer') %>

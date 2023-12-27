@@ -1,0 +1,21 @@
+<%- include('partials/header.ejs', { cssFile: '/destination.css' }) %>
+
+<main>
+<div>
+<h1> Pick your destination</h1>
+</div>
+<div class="destination">
+   <ul class="destination__list">
+    <% for (const destination of destinations) { %>
+        <li><a href="/destination/<%= destination.name.toLowerCase() %>"><%= destination.name %> </a></li>
+    <% } %>
+    </ul>
+    <div class="main__return">
+        <a class="return" href="/">Return</a>
+    </div>
+</div>
+</main>
+
+
+
+<%- include('partials/footer') %>

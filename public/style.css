@@ -1,0 +1,181 @@
+:root{
+    --white : #ffffff ;
+    --black : #000;
+    --grey : #777777 ; 
+    --extra-light-grey : #e5e2e2;
+}
+
+
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: lightcyan;
+    background-image: url("../starter-code/assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+}
+
+.navbar__logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.navbar__title{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(255, 252, 252, 0.2) 
+}
+
+/* span{
+    font-size: 1.5rem;
+    font-weight: bold;
+} */
+
+.navbar__title>a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2rem;
+} 
+
+.slide-link {
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.slide-link span{
+    padding: 10px;
+    display: inline-block;
+    transition-timing-function : linear;
+    transition: all 0.8s ease-in-out;
+}
+
+.slide-link span:nth-child(2){
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 100%;
+}
+
+.slide-link:hover span{
+    transform: translateX(-100%);
+}
+
+
+p{
+    color: var(--white);
+}
+
+
+/* MAIN */
+
+
+main{
+    display: flex;
+    width: 100%;
+}
+
+.main__left{
+    width: 30%;
+    margin-top: 250px;
+    margin-left: 100px;
+}
+
+.main__left__textUppercase{
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+
+}
+
+.main__left__textUppercase>span{
+    font-size: 10rem;
+    font-weight: 100;
+}
+
+.main__left__textNormal{
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+/* .main__right{
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.7rem;
+    letter-spacing: 0.3rem;
+    width:250px;
+    height:250px;
+    text-align:center;
+    border-radius:50%;
+    line-height: 250px;
+    background-color: var(--white);
+    color: var(--black);
+    position: absolute;
+    right: 200px;
+    bottom: 80px;
+} */
+
+.textTransform{
+    display: grid;
+    place-content: center;
+
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.7rem;
+    letter-spacing: 0.3rem;
+    width:250px;
+    height:250px;
+    text-align:center;
+    border-radius:50%;
+    line-height: 250px;
+    background-color: var(--white);
+    color: var(--black);
+    position: absolute;
+    right: 200px;
+    bottom: 80px;
+}
+
+.textTransform>a{
+    text-decoration: none;
+    color: #000;
+}
+h1{
+    font-size: 3rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    line-height: 6rem;
+}
+
+.char{
+    transform: translateY(115px);
+    transition: transform .5s;
+}
