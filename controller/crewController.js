@@ -16,14 +16,6 @@ const crewController = {
 
             const roleName = req.params.role.trim().toLowerCase() ; 
             const allRole = await dataMapper.getAllCrew();
-
-            console.log('Role Name:', roleName);
-            console.log('All Roles:', allRole);
-
-            // const oneRole = allRole.find(crew => {
-            //     console.log('Crew Role:', crew.role.toLowerCase());
-            //     return crew.role.toLowerCase() === roleName;
-            // });
             const oneRole = allRole.find(crew => crew.role.trim().toLowerCase()  === roleName) ;
 
             if(!oneRole){

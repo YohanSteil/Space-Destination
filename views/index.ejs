@@ -32,7 +32,7 @@
     </nav>
     <main> -->
 
-        <%- include('partials/header') %>
+        <%- include('partials/header', { cssFile: '/style.css' }) %>
         
         <main>     
       <div class="main__left">
@@ -46,14 +46,15 @@
       Explore
     </a> -->
     <div class="textTransform">
-    <a href=""><h1 id="my-text">
+    <a href="">
+      <h1 id="my-text">
       EXPLORE! 
     </h1>
   </a>
   </div>
-    <script src="https://unpkg.com/split-type"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
       const myText = new SplitType("#my-text")
       gsap.to('.char', {
